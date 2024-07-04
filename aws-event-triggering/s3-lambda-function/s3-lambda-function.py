@@ -1,5 +1,5 @@
 import boto3
-import json
+import JSON 
 
 def lambda_handler(event, context):
     # Extract relevant information from the S3 event trigger
@@ -24,7 +24,7 @@ def lambda_handler(event, context):
     # lambda_client.invoke(
     #    FunctionName=target_function_name,
     #    InvocationType='Event',
-    #    Payload=json.dumps({'bucket_name': bucket_name, 'object_key': object_key})
+    #    Payload=json.dumps({'bucket_name': bucket_name, 'object_mark': object_key})
     # )
 
     return {
